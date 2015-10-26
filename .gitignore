@@ -1,0 +1,5 @@
+target/
+src/main/java/.DS_Store
+.classpath
+.settings
+.project
