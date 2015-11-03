@@ -14,6 +14,11 @@ public class MessageController {
 	@Autowired
 	private MessageService messageService;
 	
+	@RequestMapping("/message")
+    public List<Message> list() {
+		return messageService.getAllMessages();
+    }
+
 	@RequestMapping("/message/current")
     public List<Message> current(@RequestParam(value="channel", required = false, defaultValue = "0") int channel) {
 		return messageService.getPublishedMessagesForCurrentChannel(channel, LocalDateTime.now());

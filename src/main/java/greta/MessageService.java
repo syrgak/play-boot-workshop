@@ -9,16 +9,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MessageService {
-	
+
 	private Logger log = Logger.getLogger(MessageService.class);
-	
+
 	@Autowired
 	private MessageRepository messageRepository;
-	
+
+	public List<Message> getAllMessages() {
+		return messageRepository.findAll();
+	}
+
 	public List<Message> getCurrentMessageForChannel(int channel) {
 		return messageRepository.findByChannel(channel);
 	}
-	
+
 	public List<Message> getPublishedMessagesForCurrentChannel(int channel, LocalDateTime publishDate) {
 		return messageRepository.findByChannelAndPublishDateLessThanEqual(channel, publishDate);
 	}
