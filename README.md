@@ -3,9 +3,11 @@ In order to get started with this workshop you will first need to install the fo
 
 ## Prerequisites / Tools
 * Install IDE of your choice for Java development
-	* Spring Tool Suite http://spring.io/tools
-	* Eclipse http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars1
+	* Spring Tool Suite https://spring.io/tools/sts (recommended)
+	* Eclipse http://www.eclipse.org/downloads/eclipse-packages/
 	* IntelliJ
+* Install Java 8
+	* Oracle JDK (Java Development Kit) http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 * Install Maven
 	* Linux ```apt-get install maven```
 	* Mac OS ```brew install maven```
